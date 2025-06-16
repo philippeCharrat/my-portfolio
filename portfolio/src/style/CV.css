@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', Arial, sans-serif;
+}
+
+.cv-container {
+  color: white;
+  min-height: 300vh;
+  position: relative;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.about-section {
+  position: relative;
+  min-height: 600px;
+  height: 99vh;
+  display: block;
+}
+
+.planet {
+  border-radius: 50%;
+  position: relative;
+  box-shadow: inset -25px -15px 40px rgba(0,0,0,.3), 0 0 20px rgba(255,255,255,.2);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.planet:hover {
+  transform: scale(1.05);
+}
+
+.planet-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 50%;
+}
+
+.planet:hover .planet-content {
+  opacity: 1;
+}
+
+.planet-about {
+  width: 400px;
+  height: 400px;
+  background-image: linear-gradient(to bottom right, #4776E6, #8E54E9);
+  position: absolute;
+  top: 15vh;
+  left: 7vw;
+  margin: 2rem;
+}
+
+.planet-photo {
+  position: absolute;
+  bottom: 3vh;
+  right: 20vw;
+  margin: 2rem;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(to bottom right, #fff, #8E54E9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.planet-photo img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  background: #fff;
+}
+
+.planet-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(80deg);
+  width: 500px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  border: 10px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 20px rgba(142, 84, 233, 0.5);
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  background-image: url('../images/moi_carre.png');
+  background-size: cover;
+  border: 3px solid white;
+}
+
+.planet-system {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.main-planet {
+  width: 220px;
+  height: 220px;
+  background-image: linear-gradient(to bottom right, #FF416C, #FF4B2B);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.main-planet:hover,
+.planet-drupal:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.planet-small {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+.frontend-planet {
+  background-image: linear-gradient(to bottom right, #56CCF2, #2F80ED);
+  top: 13%;
+  left: 12%;
+}
+
+.backend-planet {
+  background-image: linear-gradient(to bottom right, #11998e, #38ef7d);
+  top: 80%;
+  left: 20%;
+}
+
+.tools-planet {
+  background-image: linear-gradient(to bottom right, #F2994A, #F2C94C);
+  top: 40%;
+  left: 75%;
+}
+
+.planet-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.planet-project {
+  width: 280px;
+  height: 280px;
+  background-image: linear-gradient(to bottom right, #6D327C, #485DA6);
+}
+
+.project-image {
+  width: 150px;
+  height: 100px;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.project-link {
+  color: white;
+  text-decoration: none;
+  background: rgba(142, 84, 233, 0.7);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.project-link:hover {
+  background: rgba(142, 84, 233, 1);
+}
+
+ul li {
+  text-align: left;
+}
+
+.planet-drupal {
+  background-image: linear-gradient(to bottom right, #009cde, #009cde);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.planet-orange {
+  background-image: linear-gradient(to bottom right, #f16e00, #f16e00);
+  top: 10%;
+  left: 75%;
+}
+
+.planet-ivrd {
+  background-image: linear-gradient(to bottom right, #002f00, #05c304);
+  top: 31%;
+  left: 15%;
+}
+
+.planet-picture {
+  background-image: linear-gradient(to bottom right, #b19f04, #efff0a);
+  top: 0%;
+  left: 2%;
+}
+
+@media (max-width: 768px) {
+  .planet-about {
+    width: 300px;
+    height: 300px;
+  }
+  .planet-system {
+    height: 800px;
+  }
+  .main-planet {
+    width: 200px;
+    height: 200px;
+  }
+  .planet-small {
+    width: 150px;
+    height: 150px;
+  }
+  .frontend-planet {
+    top: 15%;
+    left: 50%;
+  }
+  .backend-planet {
+    top: 83%;
+    left: 20%;
+  }
+  .tools-planet {
+    top: 64%;
+    left: 70%;
+  }
+
+  .planet-medium {
+    width: 230px;
+    height: 230px;
+  }
+  
+  .planet-ivrd {
+    top: 43%;
+    left: -9%;
+  }
+
+  .planet-orange {
+    left: 50%;
+  }
+  
+  .planet-content {
+    padding: 0;
+  }
+  
+  .planet-content h2,
+  .planet-content h3,
+  .planet-content p {
+    margin-bottom: 0;
+  }
+}

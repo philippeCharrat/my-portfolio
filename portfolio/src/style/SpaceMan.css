@@ -1,0 +1,7 @@
+.spaceman {
+  position: fixed;
+  width: 170px;
+  height: 250px;
+  background-position: center;
+  scale: 0.7;
+}

@@ -1,0 +1,12 @@
+.hal-text {
+    margin-top: 10;
+    background: #222;
+    color: #fff;
+    border-radius: 12px;
+    padding: 12px 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    max-width: 300;
+    border: 2px solid #fff;
+    text-align: left;
+    max-width: 250px;
+}

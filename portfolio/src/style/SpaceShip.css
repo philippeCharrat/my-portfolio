@@ -1,0 +1,7 @@
+.spaceship-switcher {
+  position: fixed;
+  width: 130px;
+  height: 340px;
+  background-position: center;
+  transform: rotate(45deg);
+}
