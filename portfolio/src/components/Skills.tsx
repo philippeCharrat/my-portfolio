@@ -2,7 +2,7 @@ import Hal from './Hal';
 
 function Skills() {
     return (
-        <section className="cv-section skills-section">
+        <section className="cv-section skills-section" id='skills'>
           <Hal class="skills-section" text="Capitaine, nous voilà arrivé dans la galaxie des compétences."></Hal>
           <div className="planet-system">
 

@@ -21,8 +21,8 @@ function Hal({ text, class: className }: HalProps) {
     const container = document.querySelector(`.${className}`) as HTMLElement;
     if (!container || !halRef.current) return;
 
-    const x = Math.random() * (container.offsetWidth - 200);
-    halRef.current.style.left = `${x}px`;
+    const x = container.offsetWidth - 400;
+    halRef.current.style.right = `10px`;
     halRef.current.style.top = `0px`;
   }, [className]);
 
@@ -60,29 +60,29 @@ function Hal({ text, class: className }: HalProps) {
     return () => clearTimeout(timeout);
   }, [visible, text, wordIndex]);
 
-  return (
-    <div
-      ref={halRef}
-      style={{
-        position: "absolute",
-        opacity: visible ? 1 : 0,
-        transition: "opacity 0.6s",
-        pointerEvents: "none",
-        zIndex: 10,
-      }}
-    >
-      {visible && (
-        <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-          <img src={halImg} alt="Hal" style={{ width: 80, height: 80 }} />
-          {showBubble && (
-            <div className='hal-text'>
-              {displayedText}
-            </div>
-          )}
-        </div>
-      )}
-    </div>
-  );
+return (
+  <div
+    ref={halRef}
+    style={{
+      position: "absolute",
+      opacity: visible ? 1 : 0,
+      transition: "opacity 0.6s",
+      pointerEvents: "none",
+      zIndex: 10,
+    }}
+  >
+    {visible && (
+      <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+        {showBubble && (
+          <div className='hal-text' style={{ marginRight: 16 }}>
+            {displayedText}
+          </div>
+        )}
+        <img src={halImg} alt="Hal" style={{ width: 80, height: 80 }} />
+      </div>
+    )}
+  </div>
+);
 }
 
 export default Hal;

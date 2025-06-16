@@ -37,7 +37,7 @@ function Divers() {
   };
 
   return (
-    <section className="cv-section divers-section" style={{ position: "relative" }}>
+    <section className="cv-section divers-section" style={{ position: "relative" }} id='divers'>
       <Hal class="portfolio-section" text="Nous voilà dans le champ d’astéroïdes des anecdotes. Découvre leurs secrets en les survolant." />
       <Asteroid
         key={asteroidKey}

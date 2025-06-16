@@ -1,0 +1,38 @@
+.hal-menu-trigger {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 1001;
+}
+
+.hal-menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 100000;
+}
+
+.hal-menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 24px;
+  z-index: 100002;
+}
+
+.hal-menu-pill {
+  background: white;
+  border-radius: 999px;
+  border: none;
+  padding: 16px 32px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: background 0.2s;
+}
+
+.hal-menu-pill:hover {
+  background: #eee;
+}

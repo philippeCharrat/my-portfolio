@@ -2,7 +2,7 @@ import Hal from './Hal';
 
 function Portfolio() {
     return (
-      <section className="cv-section portfolio-section">
+      <section className="cv-section portfolio-section" id='portfolio'>
         <Hal class="portfolio-section" text="Tom, te voilà face aux planètes à projet."></Hal>
         <div className="planet-system">
           <div className="planet planet-project planet-picture planet-medium">

@@ -6,6 +6,7 @@ import About from './About';
 import Skills from './Skills';
 import Portfolio from './Portfolio';
 import Divers from './Divers';
+import HalMenu from './HalMenu';
 
 function CV() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -40,6 +41,7 @@ function CV() {
 
   return (
     <>
+    <HalMenu></HalMenu>
     <div className="cv-container" ref={cvRef}>
       <MainSpaceMan startPosition={spacemanPosition} />
       <About></About>
