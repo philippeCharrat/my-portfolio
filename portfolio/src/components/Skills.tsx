@@ -21,9 +21,9 @@ function Skills() {
               <div className="planet-content">
                 <h3>Front-end</h3>
                 <ul>
+                  <li>TypeScript</li>
                   <li>React</li>
                   <li>Angular</li>
-                  <li>TypeScript</li>
                 </ul>
               </div>
             </div>
@@ -44,7 +44,6 @@ function Skills() {
                 <ul>
                   <li>Git</li>
                   <li>Docker</li>
-                  <li>Suite Office</li>
                 </ul>
               </div>
             </div>

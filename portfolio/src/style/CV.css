@@ -221,7 +221,7 @@ ul li {
 
 .planet-orange {
   background-image: linear-gradient(to bottom right, #f16e00, #f16e00);
-  top: 10%;
+  top: -20%;
   left: 75%;
 }
 
@@ -273,7 +273,7 @@ ul li {
   
   .planet-ivrd {
     top: 43%;
-    left: -9%;
+    left: 0;
   }
 
   .planet-orange {

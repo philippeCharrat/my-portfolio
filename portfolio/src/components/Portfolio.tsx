@@ -9,7 +9,7 @@ function Portfolio() {
             <div className="planet-content">
               <h3>Picture arena</h3>
               <p>Projet de fin d'étude d'un jeu de carte basé sur les photos de l'utilisateurs via de la reconnaissance par IA.</p>
-              <a href="#" className="project-link">S'y rendre</a>
+              <a href="https://gitlab.com/charrat.p/picturearenafinal" className="project-link">Voir le code</a>
             </div>
           </div>
 
@@ -17,7 +17,7 @@ function Portfolio() {
             <div className="planet-content">
               <h3>i.vrd</h3>
               <p>Un site vitrine pour un bureau d'étude et SEO</p>
-              <a href="#" className="project-link">S'y rendre</a>
+              <a href="http://www.ivrd.fr" className="project-link">S'y rendre</a>
             </div>
           </div>
           
@@ -25,7 +25,7 @@ function Portfolio() {
             <div className="planet-content">
               <h3>Modules Drupal</h3>
               <p>Divers contributions au CMS Drupal</p>
-              <a href="#" className="project-link">Voir le projet</a>
+              <a href="https://www.drupal.org/u/pcharrat" className="project-link">Voir mon profil</a>
             </div>
           </div>
           

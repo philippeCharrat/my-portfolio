@@ -18,7 +18,6 @@ function Asteroid({ text, top = 100, onOut }: AsteroidProps) {
   const [hasBeenHovered, setHasBeenHovered] = useState(false);
   const runningRef = useRef(true);
 
-  // Pour déclencher onOut dans un effet
   const [hasExited, setHasExited] = useState(false);
 
   useEffect(() => {
@@ -41,15 +40,12 @@ function Asteroid({ text, top = 100, onOut }: AsteroidProps) {
     return () => {
       runningRef.current = false;
     };
-    // eslint-disable-next-line
   }, []);
 
-  // Appelle onOut uniquement quand hasExited passe à true
   useEffect(() => {
     if (hasExited && onOut) {
       onOut();
     }
-    // eslint-disable-next-line
   }, [hasExited, onOut]);
 
   useEffect(() => {
