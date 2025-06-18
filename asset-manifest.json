@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.ebe714e3.css",
-    "main.js": "/my-portfolio/static/js/main.05983461.js",
+    "main.css": "/my-portfolio/static/css/main.be746633.css",
+    "main.js": "/my-portfolio/static/js/main.f72b9847.js",
     "static/media/space_2.png": "/my-portfolio/static/media/space_2.dd755b6ecc78bc3ce935.png",
     "static/media/space_1.png": "/my-portfolio/static/media/space_1.a75343c2e7a5ac65f96c.png",
     "static/media/moi_carre.png": "/my-portfolio/static/media/moi_carre.6105f4b1228c44ad1a74.png",
@@ -26,11 +26,11 @@
     "static/media/spaceman_turn_2.png": "/my-portfolio/static/media/spaceman_turn_2.0cb0ccf9f6e2c7fe7a29.png",
     "static/media/spaceman_1.png": "/my-portfolio/static/media/spaceman_1.cbf3a0491deeee180e79.png",
     "index.html": "/my-portfolio/index.html",
-    "main.ebe714e3.css.map": "/my-portfolio/static/css/main.ebe714e3.css.map",
-    "main.05983461.js.map": "/my-portfolio/static/js/main.05983461.js.map"
+    "main.be746633.css.map": "/my-portfolio/static/css/main.be746633.css.map",
+    "main.f72b9847.js.map": "/my-portfolio/static/js/main.f72b9847.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebe714e3.css",
-    "static/js/main.05983461.js"
+    "static/css/main.be746633.css",
+    "static/js/main.f72b9847.js"
   ]
 }
