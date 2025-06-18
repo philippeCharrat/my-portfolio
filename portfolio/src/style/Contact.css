@@ -19,7 +19,7 @@
   height: 300px;
   background-image: linear-gradient(to bottom right, #63dd12, #088623);
   position: absolute;
-  top: 15vh;
+  top: 21vh;
   left: 7vw;
   margin: 2rem;
 }
@@ -52,21 +52,27 @@
 
 
 @media (max-width: 768px) {
-    .contact-section {
-        padding: 0;
-    }
+  .contact-section {
+    padding: 0;
+  }
 
-    .mono {
-        scale: 0.6;
-        right: -65px;
-        bottom: -120px;
-    } 
-    .mobile-left {
-        left: -100px !important;
-    } 
+  .mono {
+    scale: 0.5;
+    right: -70px; 
+    bottom: -146px;
+  } 
 
-    
-    .psychedelic-bg {
+  .mobile-spaceman {
+    left: 0 !important;
+    bottom: -20px;
+  } 
+
+  .lil-man {
+    scale: 0.5;
+    bottom: -35px !important;
+  }
+  
+  .psychedelic-bg {
     min-height: 110vh;
-    }
+  }
 }

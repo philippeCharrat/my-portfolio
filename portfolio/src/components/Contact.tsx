@@ -41,7 +41,7 @@ function Contact() {
   const [visible, setVisible] = useState(false);
   const sectionRef = useRef<HTMLElement | null>(null);
 
-  const maxLeft = window.innerWidth - 400;
+  const maxLeft =  window.innerWidth <= 768 ? window.innerWidth - 250 : window.innerWidth - 400;
 
   useEffect(() => {
     const observer = new window.IntersectionObserver(
@@ -104,7 +104,7 @@ function Contact() {
             </div>
         </div>
       <div
-        className={["contact","getPanel"].includes(sequence[seqIndex].name) ? "spaceman mobile-left" : "spaceman" }
+        className={["contact","getPanel"].includes(sequence[seqIndex].name) ? "spaceman mobile-spaceman lil-man" : "spaceman lil-man" }
         style={{
           backgroundImage: `url(${currentImages[frame]})`,
           backgroundRepeat: `no-repeat`,
