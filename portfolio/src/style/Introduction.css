@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  width: 98vw;  /* Ajustez selon vos besoins */
-  height: 98vh; /* Ajustez selon vos besoins */
+  width: 98vw;  
+  height: 98vh; 
   position: relative;
 }
 

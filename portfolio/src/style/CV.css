@@ -7,9 +7,9 @@ body {
 
 .cv-container {
   color: white;
-  min-height: 300vh;
+  min-height: 390vh;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   padding: 0;
   margin: 0;
 }

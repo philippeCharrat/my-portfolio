@@ -13,6 +13,7 @@ const anecdotes = [
   "Je donne des cours de web à CPE Lyon.",
   "J'ai été animateur scouts.",
   "J'ai réalisé une migration Drupal 9 vers 10",
+  "Sur Lol, j'ai déjà été Iron IV 0 LP",
 ];
 
 function Divers() {

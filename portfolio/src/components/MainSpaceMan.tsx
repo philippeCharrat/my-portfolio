@@ -15,6 +15,7 @@ function MainSpaceMan({ startPosition }: MainSpaceManProps) {
   const [isNearTarget, setIsNearTarget] = useState(false);
   const [isAvoiding, setIsAvoiding] = useState(false);
   const [avoidDirection, setAvoidDirection] = useState<"left" | "right" | null>(null);
+  const [isInContactSection, setIsInContactSection] = useState(false);
 
   const positionRef = useRef(position);
   const rotationRef = useRef(0);
@@ -164,6 +165,38 @@ function MainSpaceMan({ startPosition }: MainSpaceManProps) {
     setIsNearTarget(false);
   }, [targetY]);
 
+  useEffect(() => {
+    const checkContactSection = () => {
+      const contact = document.querySelector('.contact-section');
+      if (!contact) return setIsInContactSection(false);
+
+      const contactRect = contact.getBoundingClientRect();
+      const spacemanCenter = {
+        x: position.x + 40,
+        y: position.y + 40,
+      };
+      const scrollY = window.scrollY;
+      const scrollX = window.scrollX;
+
+      const inSection =
+        spacemanCenter.x >= contactRect.left + scrollX &&
+        spacemanCenter.x <= contactRect.right + scrollX &&
+        spacemanCenter.y >= contactRect.top + scrollY &&
+        spacemanCenter.y <= contactRect.bottom + scrollY;
+
+      setIsInContactSection(inSection);
+    };
+
+    checkContactSection();
+    window.addEventListener('scroll', checkContactSection);
+    window.addEventListener('resize', checkContactSection);
+
+    return () => {
+      window.removeEventListener('scroll', checkContactSection);
+      window.removeEventListener('resize', checkContactSection);
+    };
+  }, [position]);
+
   return (
     <div
       className="main-spaceman"
@@ -176,7 +209,8 @@ function MainSpaceMan({ startPosition }: MainSpaceManProps) {
         height: 80,
         zIndex: 1000,
         transform: `rotate(${rotation}deg)`,
-        transition: 'none'
+        transition: 'none',
+        display: isInContactSection ? 'none' : 'block'
       }}
     />
   );

@@ -32,7 +32,7 @@ function Portfolio() {
           <div className="planet planet-project planet-orange planet-medium">
             <div className="planet-content">
               <h3>Orange</h3>
-              <p>Maintient de l'usine à site de Orange Communication</p>
+              <p>Maintient de l'usine à sites d'Orange Communication</p>
             </div>
           </div>
         </div>

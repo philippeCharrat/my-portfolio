@@ -7,9 +7,9 @@ import Skills from './Skills';
 import Portfolio from './Portfolio';
 import Divers from './Divers';
 import HalMenu from './HalMenu';
+import Contact from './Contact';
 
 function CV() {
-  const [scrollPosition, setScrollPosition] = useState(0);
   const [spacemanPosition, setSpacemanPosition] = useState<[number, number]>([window.innerWidth / 2, window.innerHeight / 2]);
   const cvRef = useRef<HTMLDivElement>(null);
   
@@ -48,6 +48,7 @@ function CV() {
       <Skills></Skills>
       <Portfolio></Portfolio>
       <Divers></Divers>
+      <Contact></Contact>
     </div>
     <Background></Background>
     </>
