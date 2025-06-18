@@ -60,7 +60,7 @@ function Contact() {
         if (name === 'walk') {
           setLeft((oldLeft) => {
             if (oldLeft < maxLeft) {
-              return oldLeft + 40;
+              return oldLeft + 80;
             } else {
               return oldLeft;
             }
@@ -81,7 +81,7 @@ function Contact() {
           }
         }
       });
-    }, 200);
+    }, 300);
     return () => clearInterval(timer);
   }, [seqIndex, left, visible]);
 
