@@ -1,20 +1,36 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.eeb7de1d.css",
-    "main.js": "/my-portfolio/static/js/main.ae4822dd.js",
+    "main.css": "/my-portfolio/static/css/main.ebe714e3.css",
+    "main.js": "/my-portfolio/static/js/main.05983461.js",
     "static/media/space_2.png": "/my-portfolio/static/media/space_2.dd755b6ecc78bc3ce935.png",
     "static/media/space_1.png": "/my-portfolio/static/media/space_1.a75343c2e7a5ac65f96c.png",
     "static/media/moi_carre.png": "/my-portfolio/static/media/moi_carre.6105f4b1228c44ad1a74.png",
+    "static/media/spaceman_get_panel_4.png": "/my-portfolio/static/media/spaceman_get_panel_4.487a76d27fc266c0798a.png",
+    "static/media/spaceman_contact_2.png": "/my-portfolio/static/media/spaceman_contact_2.36455c31352f7445459f.png",
+    "static/media/spaceman_contact_1.png": "/my-portfolio/static/media/spaceman_contact_1.1d0dd7336f100307a79f.png",
+    "static/media/spaceman_get_panel_3.png": "/my-portfolio/static/media/spaceman_get_panel_3.d09332ab64b194cf82bc.png",
+    "static/media/spaceman_get_panel_2.png": "/my-portfolio/static/media/spaceman_get_panel_2.3d205f4a410922f0ab5b.png",
+    "static/media/hole.png": "/my-portfolio/static/media/hole.7d326f7a970850a96b40.png",
+    "static/media/spaceman_see_3.png": "/my-portfolio/static/media/spaceman_see_3.6e588fa6bbd5dcec3ffe.png",
+    "static/media/spaceman_see_2.png": "/my-portfolio/static/media/spaceman_see_2.2e9df6d56ad34561cfe6.png",
+    "static/media/spaceman_walk_4.png": "/my-portfolio/static/media/spaceman_walk_4.8906fb1d1315c17034f2.png",
+    "static/media/spaceman_walk_1.png": "/my-portfolio/static/media/spaceman_walk_1.9272f62f2c57d926c23f.png",
+    "static/media/spaceman_walk_2.png": "/my-portfolio/static/media/spaceman_walk_2.a17ece0477216afb1440.png",
+    "static/media/spaceman_see_1.png": "/my-portfolio/static/media/spaceman_see_1.ac08ee96dca4a54e4930.png",
+    "static/media/spaceman_turn_1.png": "/my-portfolio/static/media/spaceman_turn_1.ac08ee96dca4a54e4930.png",
+    "static/media/spaceman_walk_3.png": "/my-portfolio/static/media/spaceman_walk_3.38cb018e6dc2632235bd.png",
+    "static/media/spaceman_get_panel_1.png": "/my-portfolio/static/media/spaceman_get_panel_1.0765927240e75976c440.png",
     "static/media/asteroid_2.png": "/my-portfolio/static/media/asteroid_2.652f6deca989d9713747.png",
     "static/media/asteroid_1.png": "/my-portfolio/static/media/asteroid_1.6cc77ce3bf8e78d5dae8.png",
     "static/media/spaceman_2.png": "/my-portfolio/static/media/spaceman_2.0cb0ccf9f6e2c7fe7a29.png",
+    "static/media/spaceman_turn_2.png": "/my-portfolio/static/media/spaceman_turn_2.0cb0ccf9f6e2c7fe7a29.png",
     "static/media/spaceman_1.png": "/my-portfolio/static/media/spaceman_1.cbf3a0491deeee180e79.png",
     "index.html": "/my-portfolio/index.html",
-    "main.eeb7de1d.css.map": "/my-portfolio/static/css/main.eeb7de1d.css.map",
-    "main.ae4822dd.js.map": "/my-portfolio/static/js/main.ae4822dd.js.map"
+    "main.ebe714e3.css.map": "/my-portfolio/static/css/main.ebe714e3.css.map",
+    "main.05983461.js.map": "/my-portfolio/static/js/main.05983461.js.map"
   },
   "entrypoints": [
-    "static/css/main.eeb7de1d.css",
-    "static/js/main.ae4822dd.js"
+    "static/css/main.ebe714e3.css",
+    "static/js/main.05983461.js"
   ]
 }
