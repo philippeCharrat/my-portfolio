@@ -39,9 +39,24 @@ function Contact() {
   const [frame, setFrame] = useState(0);
   const [left, setLeft] = useState(0);
   const [visible, setVisible] = useState(false);
-  const sectionRef = useRef<HTMLElement | null>(null);
+  const sectionRef = useRef(null);
+  const [imgLoaded, setImgLoaded] = useState(false);
 
   const maxLeft =  window.innerWidth <= 768 ? window.innerWidth - 250 : window.innerWidth - 400;
+
+  useEffect(() => {
+    const imagesToLoad = [
+      ...walkImages,
+      ...seeImages,
+      ...turnImages,
+      ...getPanelImages,
+      ...contactImages,
+    ];
+    imagesToLoad.forEach((src) => {
+      const img = new window.Image();
+      img.src = src;
+    });
+  }, []);
 
   useEffect(() => {
     const observer = new window.IntersectionObserver(
@@ -83,9 +98,18 @@ function Contact() {
       });
     }, 300);
     return () => clearInterval(timer);
-  }, [seqIndex, left, visible]);
+  }, [seqIndex, left, visible, imgLoaded]);
 
   const currentImages = sequence[seqIndex].images;
+
+  const isPanel = ["contact", "getPanel"].includes(sequence[seqIndex].name);
+  const spacemanStyle: React.CSSProperties = {
+    left: isPanel ? `${left - 200}px` : `${left}px`,
+    bottom: `0px`,
+    width: isPanel ? "394px" : `200px`,
+    height: `340px`,
+    position: "absolute",
+  };
 
   return (
     <section
@@ -96,25 +120,20 @@ function Contact() {
     >
       <img src={hole} className="blackhole" alt="" />
       <div className="planet planet-contact">
-            <div className="planet-content">
-            <h2>Pour me contacter</h2>
-            <p className="bio">
-                Vous pouvez m'ajouter sur Linkedin :  <a href="https://www.linkedin.com/in/philippe-charrat/">ici</a> ou sur X: <a href="https://x.com/philippe_pol/">ici</a>
-            </p>
-            </div>
+        <div className="planet-content">
+          <h2>Pour me contacter</h2>
+          <p className="bio">
+            Vous pouvez m'ajouter sur Linkedin : <a href="https://www.linkedin.com/in/philippe-charrat/">ici</a> ou sur X : <a href="https://x.com/philippe_pol/">ici</a>
+          </p>
         </div>
-      <div
-        className={["contact","getPanel"].includes(sequence[seqIndex].name) ? "spaceman mobile-spaceman lil-man" : "spaceman lil-man" }
-        style={{
-          backgroundImage: `url(${currentImages[frame]})`,
-          backgroundRepeat: `no-repeat`,
-          backgroundPosition: `bottom`,
-          left: ["contact","getPanel"].includes(sequence[seqIndex].name) ? `${left-200}px` : `${left}px`,
-          bottom: `0px`,
-          width: ["contact","getPanel"].includes(sequence[seqIndex].name) ? "394px" : `200px`,
-          height: `340px`,
-          position: "absolute",
-        }}
+      </div>
+      <img
+        className={isPanel ? "spaceman mobile-spaceman lil-man" : "spaceman lil-man"}
+        src={currentImages[frame]}
+        alt=""
+        style={spacemanStyle}
+        draggable={false}
+        onLoad={() => setImgLoaded(true)}
       />
       <img src={mono} className="mono" alt="" />
       <div
@@ -127,8 +146,7 @@ function Contact() {
           height: `340px`,
           position: "absolute",
         }}
-      >
-      </div>
+      />
     </section>
   );
 }

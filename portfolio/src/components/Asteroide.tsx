@@ -12,7 +12,7 @@ interface AsteroidProps {
 const images = [asteroid1, asteroid2];
 
 function Asteroid({ text, top = 100, onOut }: AsteroidProps) {
-  const [position, setPosition] = useState(0);
+  const [position, setPosition] = useState(-150);
   const [hovered, setHovered] = useState(false);
   const [imgIndex, setImgIndex] = useState(0);
   const [hasBeenHovered, setHasBeenHovered] = useState(false);
@@ -22,7 +22,7 @@ function Asteroid({ text, top = 100, onOut }: AsteroidProps) {
 
   useEffect(() => {
     runningRef.current = true;
-    const speed = 1;
+    const speed = 3;
     const animate = () => {
       setPosition((prev) => {
         if (prev < window.innerWidth + 100 && runningRef.current) {
