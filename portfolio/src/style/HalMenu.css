@@ -36,3 +36,14 @@
 .hal-menu-pill:hover {
   background: #eee;
 }
+
+@media (max-width: 768px) {
+  .hal-menu {
+    display: grid;
+  }
+  
+  .hal-menu-pill {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -127,7 +127,7 @@ body {
 .planet-system {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 100vh;
 }
 
 .main-planet {
@@ -141,8 +141,7 @@ body {
   z-index: 2;
 }
 
-.main-planet:hover,
-.planet-drupal:hover {
+.main-planet:hover {
   transform: translate(-50%, -50%) scale(1.05);
 }
 
@@ -214,9 +213,8 @@ ul li {
 .planet-drupal {
   background-image: linear-gradient(to bottom right, #009cde, #009cde);
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 8%;
+  left: 49%;
 }
 
 .planet-orange {
@@ -227,7 +225,7 @@ ul li {
 
 .planet-ivrd {
   background-image: linear-gradient(to bottom right, #002f00, #05c304);
-  top: 31%;
+  top: 15%;
   left: 15%;
 }
 
@@ -237,24 +235,51 @@ ul li {
   left: 2%;
 }
 
+.planet-sofrecom {
+  background-image: linear-gradient(to bottom right, #20517D, #51B6E3);
+  top: -2%;
+  right: 2%;
+}
+
+.planet-lead {
+  background-image: linear-gradient(to bottom right, #1f272e, #000000);
+  bottom: 30%;
+  left: 60%; 
+}
+
+.portfolio-section {
+  height: 150vh;
+}
+
 @media (max-width: 768px) {
   .planet-about {
     width: 300px;
     height: 300px;
   }
+
   .planet-system {
+    height: 150vh;
+  }
+
+  .portfolio-section {
     height: 200vh;
   }
+
+  .portfolio-section .planet-system {
+    height: 200vh;
+  }
+
   .main-planet {
     width: 200px;
     height: 200px;
   }
+
   .planet-small {
     width: 150px;
     height: 150px;
   }
   .frontend-planet {
-    top: 15%;
+    top: 7%;
     left: 50%;
   }
   .backend-planet {
@@ -285,8 +310,8 @@ ul li {
     top: 7%;
   }
   
-  .planet-content {
-    padding: 0;
+  .planet-content p {
+    margin: 0;
   }
   
   .planet-content h2,
@@ -315,11 +340,24 @@ ul li {
     top: 60%;
   }
 
-  .hal-menu {
-    display: block;
+  .planet-lead {
+    bottom: 2%;
+    left: 40%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .portfolio-section {
+    height: 300vh;
   }
 
-  .hal-menu-pill {
-    margin-bottom: 1rem;
+  .portfolio-section .planet-system {
+    height: 300vh;
   }
+  
+  .planet-system {
+    height: 200vh;
+  }
+
 }

@@ -8,8 +8,8 @@ function Portfolio() {
           <div className="planet planet-project planet-picture planet-medium">
             <div className="planet-content">
               <h3>Picture arena</h3>
-              <p>Projet de fin d'étude d'un jeu de carte basé sur les photos de l'utilisateurs via de la reconnaissance par IA.</p>
-              <a href="https://gitlab.com/charrat.p/picturearenafinal" className="project-link">Voir le code</a>
+              <p>TCG basé sur les photos de l'utilisateurs via de la génération IA.</p>
+              <a href="https://gitlab.com/charrat.p/picturearenafinal" className="project-link" target='_blank'>Voir le code</a>
             </div>
           </div>
 
@@ -25,7 +25,7 @@ function Portfolio() {
             <div className="planet-content">
               <h3>Modules Drupal</h3>
               <p>Divers contributions au CMS Drupal</p>
-              <a href="https://www.drupal.org/u/pcharrat" className="project-link">Voir mon profil</a>
+              <a href="https://www.drupal.org/u/pcharrat" className="project-link" target='_blank'>Voir mon profil</a>
             </div>
           </div>
           
@@ -33,6 +33,19 @@ function Portfolio() {
             <div className="planet-content">
               <h3>Orange</h3>
               <p>Maintient de l'usine à sites d'Orange Communication</p>
+            </div>
+          </div>
+          <div className="planet planet-project planet-sofrecom planet-medium">
+            <div className="planet-content">
+              <h3>Sofrecom</h3>
+              <p>Création de l'intranet Sofrecom</p>
+            </div>
+          </div>
+          <div className="planet planet-project planet-lead planet-medium">
+            <div className="planet-content">
+              <h3>Un lead presque parfait</h3>
+              <p>Un site pour tester votre profil de développeur.</p>
+              <a href="https://un-lead-presque-parfait.labruz.fr/" className="project-link" target='_blank'>Faites le test</a>
             </div>
           </div>
         </div>

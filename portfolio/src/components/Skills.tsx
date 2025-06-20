@@ -1,4 +1,5 @@
 import Hal from './Hal';
+import '../style/Skills.css';
 
 function Skills() {
     return (
@@ -9,42 +10,34 @@ function Skills() {
             <div className="planet main-planet">
               <div className="planet-content">
                 <h3>Back-end</h3>
-                <ul>
-                  <li>PHP</li>
-                  <li>Symfony</li>
-                  <li>Java</li>
-                </ul>
+                <p>PHP</p>
+                <p>Symfony</p>
+                <p>Java</p>
               </div>
             </div>
 
             <div className="planet planet-small frontend-planet">
               <div className="planet-content">
                 <h3>Front-end</h3>
-                <ul>
-                  <li>TypeScript</li>
-                  <li>React</li>
-                  <li>Angular</li>
-                </ul>
+                <p>TypeScript</p>
+                <p>React</p>
+                <p>Angular</p>
               </div>
             </div>
             
             <div className="planet planet-small backend-planet">
               <div className="planet-content">
                 <h3>CMS</h3>
-                <ul>
-                  <li>Drupal 9</li>
-                  <li>Drupal 10</li>
-                </ul>
+                <p>Drupal 9</p>
+                <p>Drupal 10</p>
               </div>
             </div>
             
             <div className="planet planet-small tools-planet">
               <div className="planet-content">
                 <h3>Outils</h3>
-                <ul>
-                  <li>Git</li>
-                  <li>Docker</li>
-                </ul>
+                <p>Git</p>
+                <p>Docker</p>
               </div>
             </div>
           </div>
