@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from "react";
-import Hal from "./Hal";
 import hole from "../images/hole.png";
 import '../style/Contact.css'
 import image1 from "../images/spaceman_walk_1.png";
@@ -35,14 +34,15 @@ const sequence = [
 ];
 
 function Contact() {
-  const [seqIndex, setSeqIndex] = useState(0); 
+  const isMobile = window.innerWidth <= 768;
+  const maxLeft = isMobile ? window.innerWidth - 250 : window.innerWidth - 400;
+
+  const [seqIndex, setSeqIndex] = useState(isMobile ? sequence.length - 1 : 0); 
   const [frame, setFrame] = useState(0);
-  const [left, setLeft] = useState(0);
+  const [left, setLeft] = useState(isMobile ? maxLeft : 0);
   const [visible, setVisible] = useState(false);
   const sectionRef = useRef(null);
   const [imgLoaded, setImgLoaded] = useState(false);
-
-  const maxLeft =  window.innerWidth <= 768 ? window.innerWidth - 250 : window.innerWidth - 400;
 
   useEffect(() => {
     const imagesToLoad = [
@@ -69,6 +69,12 @@ function Contact() {
 
   useEffect(() => {
     if (!visible) return;
+    if (isMobile) {
+      setSeqIndex(sequence.length - 1);
+      setFrame(0);
+      setLeft(maxLeft);
+      return;
+    }
     const { name, images, loop } = sequence[seqIndex];
     let timer = setInterval(() => {
       setFrame((prev) => {
@@ -98,7 +104,7 @@ function Contact() {
       });
     }, 300);
     return () => clearInterval(timer);
-  }, [seqIndex, left, visible, imgLoaded]);
+  }, [seqIndex, left, visible, imgLoaded, isMobile, maxLeft]);
 
   const currentImages = sequence[seqIndex].images;
 
@@ -128,15 +134,16 @@ function Contact() {
         </div>
       </div>
       <img
-        className={isPanel ? "spaceman mobile-spaceman lil-man" : "spaceman lil-man"}
+        className="spaceman"
         src={currentImages[frame]}
         alt=""
         style={spacemanStyle}
         draggable={false}
         onLoad={() => setImgLoaded(true)}
       />
-      <img src={mono} className="mono" alt="" />
-      <div
+      { !isMobile &&
+      <><img src={mono} className="mono" alt="" /> 
+        <div
         className="ground"
         style={{
           backgroundImage: `url(${ground})`,
@@ -147,6 +154,7 @@ function Contact() {
           position: "absolute",
         }}
       />
+      </>}
     </section>
   );
 }

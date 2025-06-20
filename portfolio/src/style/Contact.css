@@ -56,23 +56,13 @@
     padding: 0;
   }
 
-  .mono {
-    scale: 0.5;
-    right: -70px; 
-    bottom: -146px;
-  } 
-
-  .mobile-spaceman {
-    left: 0 !important;
-    bottom: -20px;
-  } 
-
-  .lil-man {
-    scale: 0.5;
-    bottom: -35px !important;
-  }
-  
   .psychedelic-bg {
     min-height: 110vh;
+  }
+
+  .contact-section .spaceman {
+    scale: 1;
+    right: 0;
+    left: inherit !important;
   }
 }
